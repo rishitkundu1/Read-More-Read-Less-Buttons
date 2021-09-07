@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+      <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Read More , Read less Buttons in HTML and CSS | RKcodes</title>
+            <!-- Linking to CSS -->
+            <link rel="stylesheet" href="style.css">
+      </head>
+      <body>
+            <div class="wrapper">
+                  <h2>Read more Read less Buttons</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam dolor similique at eum optio<span id="dots">....</span><span id="more">placeat consectetur nulla id doloremque. Quia nostrum dolore placeat ducimus tenetur! Numquam ducimus sit iure praesentium?Nemo esse dolorem harumrerum saepe, illum ullamassumenda debitis natusfacere tempore similiquequis optio tenetur</span></p>
+                  <button id="btn" onclick="myFunction()">Read More</button>
+            </div>
+            <script>
+                  function myFunction(){
+                        dots = document.querySelector("#dots");
+                        moreText = document.querySelector("#more");
+                        btn = document.querySelector("#btn");
+
+                        if(dots.style.display === "none"){
+                              dots.style.display = "inline";
+                              moreText.style.display = "none";
+                              btn.innerHTML = "Read More";
+                        }else{
+                              dots.style.display = "none";
+                              moreText.style.display = "inline";
+                              btn.innerHTML = "Read Less";
+                        }
+                  }
+            </script>
+      </body>
+</html>
